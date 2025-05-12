@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso del Sol</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffdf7;
+            color: #333;
+        }
+        header {
+            background-color: #ffe69c;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        header img {
+            height: 50px;
+        }
+        header .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        header .stars {
+            font-size: 1.2em;
+            color: gold;
+        }
+        nav {
+            background-color: #ffcc70;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 5px 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x500/?beach,resort');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .content {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .button {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e68900;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffe69c;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Phoenix_simple_icon.svg/2048px-Phoenix_simple_icon.svg.png" alt="Logo Hotel">
+            <h1>Hotel Paraíso del Sol <span class="stars">⭐⭐⭐⭐</span></h1>
+        </div>
+        <button class="button">Reservar ahora</button>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Historia</a>
+        <a href="#">Ubicación</a>
+        <a href="#">Habitaciones</a>
+        <a href="#">Galería</a>
+        <a href="#">Actividades</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="hero">
+        Tu descanso, nuestro compromiso
+    </div>
+    <div class="content">
+        <section>
+            <h2>Historia del Hotel</h2>
+            <p>Fundado en 2002, el Hotel Paraíso del Sol comenzó como un pequeño hostal familiar. Con esfuerzo y pasión por la hospitalidad, creció hasta convertirse en uno de los destinos favoritos de la costa del Pacífico mexicano.</p>
+        </section>
+        <section>
+            <h2>Habitaciones y Tarifas</h2>
+            <ul>
+                <li><strong>Estándar:</strong> $1,200 MXN por noche</li>
+                <li><strong>Doble:</strong> $1,800 MXN por noche</li>
+                <li><strong>Suite de lujo:</strong> $3,000 MXN por noche</li>
+            </ul>
+        </section>
+        <section class="gallery">
+            <h2>Galería</h2>
+            <img src="https://source.unsplash.com/300x200/?hotel-room" alt="Habitación">
+            <img src="https://source.unsplash.com/300x200/?beach" alt="Playa">
+            <img src="https://source.unsplash.com/300x200/?pool,resort" alt="Alberca">
+        </section>
+        <section>
+            <h2>Actividades</h2>
+            <ul>
+                <li>Clases de surf y paddle</li>
+                <li>Recorridos turísticos y senderismo</li>
+                <li>Masajes frente al mar</li>
+                <li>Cenas románticas</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        © 2025 Hotel Paraíso del Sol · Todos los derechos reservados
+    </footer>
+</body>
+</html>
